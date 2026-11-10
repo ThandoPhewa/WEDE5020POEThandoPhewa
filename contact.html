@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lulu's Sugarcraft Studio (Contact)</title>
+
+
+    <meta name="description" content="Contact Lulu's Sugarcraft Studio for general questions, feedback or order information. Email or phone our KwaZulu-Natal based business.">
+    <meta name="keywords" content="contact Lulu's Sugarcraft Studio, KwaZulu-Natal cake studio, custom baking contact">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://YOUR-DOMAIN.netlify.app/contact.html">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+</head>
+
+    <script src="JavaScript/scriptcontact.js"></script>
+   
+
+     <meta name="description"
+    content="Explore Athlone In Pietermaritzburg using an interactive
+    LeafLet map. Zoom in,zoom out, view GPS co-ordinates and explore the surrounding
+    area.">
+
+    <meta name="Keywords"
+    content="LeafLet, interactive Map, Athlone, Pietermaritzburg,south Africa,
+    GPS Co-ordinates, JavaScript, Web development">
+
+    <meta name="author"
+    content="Noluthando Phewa">
+
+    <meta name="robots" content="index,follow">
+
+</head>
+<body>
+    
+    <header>
+         <img src="images/logo.jpeg" 
+        class="profile-image"
+         width="200"
+         alt="Lulu's Sugarcraft Studio logo">
+
+        <h1>Lulu's Sugarcraft Studio</h1>
+
+        <p>Creating sweet moments, one creation at a time.</p>
+    </header>
+
+    <!-- Navigation -->
+   <nav>
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-content">
+        <section class="content-section">
+            <p class="eyebrow">
+                Get in touch
+            </p>
+
+            <h2>Contact us</h2>
+                    
+            <p>We would love to hear from you.
+                 Use the details below for general questions,
+                 feedback or other messages.
+                </p>
+
+            <div class="contact-details">
+                <p>
+                    <strong
+                    >Email:
+                </strong>
+                     <a href="mailto:info@lulussugarcraftstudio.co.za">
+                        info@lulussugarcraftstudio.co.za
+                    </a>
+                    </p>
+                    
+                    <p>
+                        <strong>
+                            Phone:
+                        </strong> 
+                        <a href="tel:+27648117943">064 811 7943</a></p><p><strong>Service area:</strong> Selected areas of KwaZulu-Natal, South Africa. Collection or delivery arrangements must be confirmed when placing an order.</p></div>
+        </section>
+        <section class="content-section">
+            <h2>Our general service area</h2>
+
+            <p>The map shows the wider KwaZulu-Natal region for general location context. 
+                It is not an exact shop or collection address.
+            </p>
+            
+            <div id="map" class="map-container" role="region" aria-label="Map showing the general KwaZulu-Natal service area">
+
+            </div>
+            <p class="form-help">
+                Map data © OpenStreetMap contributors. An internet connection is needed to load the map.
+            </p>
+        
+        </section>
+        <section class="content-section">
+            <h2>Send us a general message</h2>
+            <p>This contact form is for general messages. 
+                When you submit it, 
+                your email application will open with your message prepared for the studio.
+
+            </p>
+            <form id="contactForm" novalidate>
+                <div class="form-field">
+                    <label for="contactName">
+                        Full name *
+                    </label>
+                    <input type="text" id="contactName" name="contactName" minlength="2" maxlength="60" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="contactEmail">
+                        Email address *
+                    </label>
+                    <input type="email" id="contactEmail" name="contactEmail" required>
+                </div>
+
+
+                <div class="form-field">
+                    <label for="contactType">
+                        Type of message *
+                    </label>
+                    <select id="contactType" name="contactType" required>
+                        <option value="">
+                            Please select
+                        </option>
+                        
+                        <option>
+                            General question
+                        </option>
+
+                        <option>
+                            Feedback
+                        </option>
+
+                        <option>
+                            Order follow-up
+                        </option>
+
+                        <option>
+                            Other
+                        </option>
+
+                    </select></div>
+                <div class="form-field">
+                    <label for="contactMessage">
+                    Your message *
+                </label>
+                    <textarea id="contactMessage" name="contactMessage" rows="6" minlength="10" maxlength="1500" required>
+
+                </textarea></div>
+                
+                <div id="contactErrors" class="error-message" role="alert" aria-live="assertive">
+
+                </div>
+                <button class="button" type="submit">
+                    Prepare email
+                </button>
+
+                <button class="button button-light" type="reset">
+                    Clear form
+                </button>
+            </form>
+            <p class="form-help">This form opens your device's default email application. If no email application is configured, email the studio directly using the address above.</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Lulu's Sugarcraft Studio. All rights reserved.</p>
+        <!--Leaflet script-->
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="js/map.js" defer></script>
+    <script src="js/scriptcontact.js" defer></script>
+    </footer>
+
+
+</body>
+</html>

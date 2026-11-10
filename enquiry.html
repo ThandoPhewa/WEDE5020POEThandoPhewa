@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lulu's Sugarcraft Studio (Enquiry)</title>
+
+    <link rel="canonical" href="https://YOUR-DOMAIN.netlify.app/enquiry.html">
+
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="js/scriptenquiry.js"></script>
+</head>
+<body>
+
+    
+    <header>
+         <img src="images/logo.jpeg" 
+        class="profile-image"
+         width="200"
+         alt="Lulu's Sugarcraft Studio logo">
+
+        <h1>Lulu's Sugarcraft Studio</h1>
+
+        <p>Creating sweet moments, one creation at a time.</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    
+    <main>
+
+        <section>
+            <h2>Make an Enquiry</h2>
+
+            <p>
+                Complete the form below to enquire about a product or
+                customised order.
+            </p>
+
+            <!-- Enquiry Form -->
+
+            <!-- Netlify Forms processes this form after the website is deployed to Netlify. -->
+            <form name="enquiry" id="enquiryForm" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+
+                <input type="hidden" name="form-name" value="enquiry">
+                <p class="visually-hidden">
+                    <label>Do not fill this in: 
+                        <input name="bot-field">
+                    </label>
+                </p>
+                <div class="form-field">
+                    <label for="name">Full name *
+
+                    </label>
+                    <input type="text" id="name" name="name" minlength="2" maxlength="60" autocomplete="name" required></div>
+                <div class="form-field">
+                    <label for="email">Email address *
+
+                    </label>
+                    <input type="email" id="email" name="email" autocomplete="email" required></div>
+                <div class="form-field">
+                    <label for="phone">
+                        Phone number *
+
+                    </label>
+                    <input type="tel" id="phone" name="phone" inputmode="tel" pattern="[0-9+() -]{9,16}" title="Enter a valid phone number using 9 to 16 digits or phone symbols." required></div>
+                <div class="form-field">
+                    <label for="product">Product required *</label>
+                    <select id="product" name="product" required>
+                        <option value="">Please select</option>
+                        <option value="Custom cake">
+                            Custom cake
+                        </option>
+                        <option value="Cupcakes">
+                            Cupcakes
+                        </option>
+
+                        <option value="Sweet treats">
+                            Sweet treats
+                        </option>
+                        <option value="Other">
+                            Other
+                        </option>
+                    </select>
+                </div>
+
+                <div class="form-field">
+                    <label for="date">
+                        Required date *
+                    </label>
+
+                    <input type="date" id="date" name="date" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="quantity">
+                        Approximate quantity
+                    </label>
+
+                    <input type="number" id="quantity" name="quantity" min="1" max="500" placeholder="For example, 12"></div>
+                <div class="form-field">
+                    <label for="message">
+                        Describe your requirements *
+                    </label><textarea id="message" name="message" rows="6" minlength="10" maxlength="1000" placeholder="Tell us about the size, theme, colours, flavours or other requirements." required>
+
+                    </textarea>
+                </div>
+                <p class="form-help">
+                    * Required fields. Please do not include private payment details in this form.
+                </p>
+
+                <br><br>
+                
+                <div id="enquiryErrors" class="error-message" role="alert" aria-live="assertive"></div>
+
+                <button  class="button" type="submit">Submit Enquiry</button>
+                <button class="button button-light" type="reset">Clear Form</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    
+    <footer>
+        <p>&copy; 2026 Lulu's Sugarcraft Studio. All rights reserved.</p>
+    </footer>
+
+    
+</body>
+</html>
